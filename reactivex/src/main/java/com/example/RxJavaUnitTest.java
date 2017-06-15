@@ -1,7 +1,7 @@
 package com.example;
 
 import org.junit.Test;
-import io.reactivex.Observable;
+import rx.Observable;
 
 import java.util.ArrayList;
 import java.util.List;
