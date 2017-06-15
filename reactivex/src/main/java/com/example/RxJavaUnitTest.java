@@ -1,7 +1,7 @@
 package com.example;
 
 import org.junit.Test;
-import io.reactivex.Observable;
+import rx.Observable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class RxJavaUnitTest {
 
     public List<Todo> getTodos() {
         List<Todo> todosFromWeb = new ArrayList<>();
-        IntStream.range(0, 50).forEach(value -> todosFromWeb.add(new Todo()));
+        IntStream.range(0, 50).forEach(value -> todosFromWeb.add(new Todo(value)));
         return todosFromWeb;
     }
 }
